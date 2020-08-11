@@ -8,7 +8,7 @@ public class StudentSort {
 
         ArrayList<Student> list = new ArrayList<>();
         list.add(new Student(59, "kritik", 21));
-        list.add(new Student(65, "vatslist", 14));
+        list.add(new Student(65, "vatsal", 14));
         list.add(new Student(105, "rakshit", 50));
 
         Comparator<Student> cm1 = Comparator.comparing(Student::getName);
