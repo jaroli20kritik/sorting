@@ -1,6 +1,7 @@
 package com.company;
 
 class Student {
+    // make these members private
     int rollno;
     String name;
     int age;
@@ -22,6 +23,7 @@ class Student {
     public int getRollno() {
         return rollno;
     }
+    // if you want, you can also override toString()
 }
 
 
