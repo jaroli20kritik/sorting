@@ -6,11 +6,13 @@ import java.util.Comparator;
 public class StudentSort {
     public static void main(String[] args) {
 
+        // use List in LHS instead of ArrayList
         ArrayList<Student> list = new ArrayList<>();
         list.add(new Student(59, "kritik", 21));
         list.add(new Student(65, "vatsal", 14));
         list.add(new Student(105, "rakshit", 50));
 
+        // Comparator<Student> cm1 = (s1, s2) -> s1.getName().compareTo(s2.getName())
         Comparator<Student> cm1 = Comparator.comparing(Student::getName);
         list.sort(cm1);
         System.out.println("Sorting by Name");
